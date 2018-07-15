@@ -1,0 +1,51 @@
+<!-- <nav>
+    <div class="nav-wrapper">
+        <a href="#" class="brand-logo">Logo</a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li>
+                <a ui-sref="web.home">Home</a>
+            </li>
+            <li>
+                <a ui-sref="web.stories">Stories</a>
+            </li>
+        </ul>
+    </div>
+</nav> -->
+<nav class="nav-extended">
+    <div class="nav-wrapper">
+        <a href="#" class="brand-logo">IndiaAgainstRapes</a>
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger">
+            <i class="material-icons">menu</i>
+        </a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li>
+                <a ui-sref="web.home">HOME</a>
+            </li>
+            <li>
+                <a ui-sref="web.stories">STORIES</a>
+            </li>
+            <li>
+                <a ui-sref="web.about">ABOUT</a>
+            </li>
+            <li>
+                <a ui-sref="web.contactus">CONTACT US</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<ul class="sidenav" id="mobile-demo">
+    <li>
+        <a ui-sref="web.home">Home</a>
+    </li>
+    <li>
+        <a ui-sref="web.stories">Stories</a>
+    </li>
+    <li>
+        <a ui-sref="web.home">About</a>
+    </li>
+    <li>
+        <a ui-sref="web.Contactus">Contact Us</a>
+    </li>
+</ul>
+<div ui-view=""></div>
