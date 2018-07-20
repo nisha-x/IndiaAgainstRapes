@@ -10,11 +10,13 @@ myApp.config(function ($stateProvider, $urlRouterProvider) {
             templateUrl: "../views/web.html",
             controller: "webController as ctrl"
         })
+
         .state("web.home", {
             url: "/home",
             views: {
                 '@web': {
-                    templateUrl: "../views/home.html"
+                    templateUrl: "../views/home.html",
+                    controller: "homeController as ctrl"
                 }
             }
 
@@ -23,7 +25,8 @@ myApp.config(function ($stateProvider, $urlRouterProvider) {
             url: "/stories",
             views: {
                 '@web': {
-                    templateUrl: "../views/stories.html"
+                    templateUrl: "../views/stories.html",
+                    controller: "storiesController as ctrl"
                 }
             }
         })
@@ -32,7 +35,8 @@ myApp.config(function ($stateProvider, $urlRouterProvider) {
             url: "/about",
             views: {
                 '@web': {
-                    templateUrl: "../views/about.html"
+                    templateUrl: "../views/about.html",
+                    controller: "aboutController as ctrl"
                 }
             }
         })
@@ -40,9 +44,9 @@ myApp.config(function ($stateProvider, $urlRouterProvider) {
             url: "/contactus",
             views: {
                 '@web': {
-                    templateUrl: "../views/contactus.html"
+                    templateUrl: "../views/contactus.html",
+                    controller: "contactusController as ctrl"
                 }
             }
         })
-
 });

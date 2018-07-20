@@ -1,3 +1,39 @@
-<h1>this is home HTML.</h1>
+<div>
+    <div class="card">
+        <div class="card-image">
+            <img src="../app/images/womenProtest.jpg">
+            <span class="card-title">
+                <center>#FlashBriefing</center>
+            </span>
+        </div>
+    </div>
+</div>
+</div>
+<div class="container">
+    <div class="row">
+        <div ng-repeat="item in topStories" class="col s12 m4">
+            <div class="card">
+                <div class="card-image">
+                    <img src="../app/images/story1.jpg">
+                </div>
+                <div>
+                    <center>{{item.id}}</center>
+                </div>
+                <div>
+                    <center>
+                        <h3>{{item.title}}</h3>
+                    </center>
+                </div>
+                <div class="card-content">
+                    {{item.descr}}
+                </div>
+                <div class="card-action">
+                    <a href="#">Read More</a>
+                    <div class="icon-preview col s6 m3">
+                        <i class="material-icons dp48">share</i></div>
+                </div>
 
-<!-- <input ng-model="username" /> -->
+            </div>
+        </div>
+    </div>
+</div>
