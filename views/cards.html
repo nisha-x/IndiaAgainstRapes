@@ -1,0 +1,47 @@
+<!-- <button class="btn btn-success" ng-click="getMeMyCards()"> -->
+
+Get Cards</button>
+
+
+
+<section id="meCards">
+  <h5>ME CARDS</h5>
+  <div class="row">
+    <div class="col s12 m6" ng-repeat="item in meCards">
+      <div class="card" ui-sref="web.cards.fullCard({'cardsCid':item.cid})">
+        <div class="card blue-grey darken-1">
+          <div class="card-content white-text">
+            <span class="card-title">{{item.name}}</span>
+            <p>{{item.address}}</p>
+            <p>{{item.phone}}</p>
+          </div>
+          <div class="card-action">
+            <a href="#">This is a link</a>
+            <a href="#">This is a link</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section id="myContactCards">
+  <h5>MY CONTACTS</h5>
+  <div class="row">
+    <div class="col s12 m6" ng-repeat="port in myContactCards">
+      <div class="card blue-grey darken-1">
+        <div class="card-content white-text">
+          <span class="card-title">{{port.name}}</span>
+          <p>{{port.phone}}</p>
+          <p>{{port.address}}</p>
+          <p>{{port.email}}</p>
+        </div>
+        <div class="card-action">
+          <a href="#">This is a link</a>
+          <a href="#">This is a link</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

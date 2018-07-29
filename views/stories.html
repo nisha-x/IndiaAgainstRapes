@@ -1,28 +1,31 @@
-<h1>this is storeis</h1>
 <div class="container">
-        <div class="row">
-            <div ng-repeat="item in topStories" class="col s12 m4">
-                <div class="card">
-                    <div class="card-image">
-                        <img src="../app/images/story1.jpg">
-                    </div>
-                    <div>
-                        <center>{{item.id}}</center>
-                    </div>
-                    <div>
-                        <center>
-                            <h3>{{item.title}}</h3>
-                        </center>
-                    </div>
-                    <div class="card-content">
-                        {{item.descr}}
-                    </div>
-                    <div class="card-action">
-                        <a href="#">Read More</a>
-                        <div class="icon-preview col s6 m3"><i class="material-icons dp48">share</i></div>
-                    </div>
-    
+    <div class="row">
+        <div ng-repeat="item in topStories" class="col s12 m4">
+            <div class="card" ui-sref="web.stories.fullstories({'storiesId': item.id})">
+                <div class="card-image">
+                    <img src={{item.imageUrl}}>
                 </div>
+                <div>
+                    <center>{{item.id}}</center>
+                </div>
+                <div>
+                    <center>
+                        <h3>{{item.title}}</h3>
+                    </center>
+                </div>
+                <div class="card-content">
+                    {{item.descr}}
+                </div>
+                <div class="card-action">
+                    <a href="#">Read More</a>
+                    <a href="#">
+                        <i class="material-icons link-list-icon">share</i>
+                    </a>
+                </div>
+
             </div>
+
         </div>
     </div>
+</div>
+</div>

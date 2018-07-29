@@ -1,5 +1,5 @@
 angular.module("myApp")
-    .controller("contactUsController", ["$scope", function ($scope) {
+    .controller("contactusController", ["$scope", function ($scope) {
 
 
 

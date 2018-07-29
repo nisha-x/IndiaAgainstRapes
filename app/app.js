@@ -31,6 +31,16 @@ myApp.config(function ($stateProvider, $urlRouterProvider) {
             }
         })
 
+        .state("web.stories.fullstories", {
+            url: "/:storiesId",
+            views: {
+                '@web': {
+                    templateUrl: "../views/fullstories.html",
+                    controller: "fullStoriesController as ctrl"
+                }
+            }
+        })
+
         .state("web.about", {
             url: "/about",
             views: {
@@ -49,4 +59,23 @@ myApp.config(function ($stateProvider, $urlRouterProvider) {
                 }
             }
         })
+        .state("web.cards", {
+            url: "/cards",
+            views: {
+                '@web': {
+                    templateUrl: "../views/cards.html",
+                    controller: "cardsController as ctrl"
+                }
+            }
+        })
+        .state("web.cards.fullCard", {
+            url: "/:cardsCid",
+            views: {
+                '@web': {
+                    templateUrl: "../views/full-card.html",
+                    controller: "fullCardController as ctrl"
+                }
+            }
+        })
+
 });

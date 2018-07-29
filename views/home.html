@@ -1,10 +1,13 @@
 <div>
+
     <div class="card">
         <div class="card-image">
+
             <img src="../app/images/womenProtest.jpg">
-            <span class="card-title">
-                <center>#FlashBriefing</center>
-            </span>
+            <div class="caption center-align">
+                <h3>#FlashBriefing</h3>
+            </div>
+
         </div>
     </div>
 </div>
@@ -12,9 +15,9 @@
 <div class="container">
     <div class="row">
         <div ng-repeat="item in topStories" class="col s12 m4">
-            <div class="card">
+            <div class="card"ui-sref="web.stories.fullstories({'storiesId': item.id})">
                 <div class="card-image">
-                    <img src="../app/images/story1.jpg">
+                    <img src="{{item.imageUrl}}">
                 </div>
                 <div>
                     <center>{{item.id}}</center>
@@ -29,10 +32,10 @@
                 </div>
                 <div class="card-action">
                     <a href="#">Read More</a>
-                    <div class="icon-preview col s6 m3">
-                        <i class="material-icons dp48">share</i></div>
+                    <a href="#">
+                        <i class="material-icons">share</i>
+                    </a>
                 </div>
-
             </div>
         </div>
     </div>

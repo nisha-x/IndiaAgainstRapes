@@ -1,5 +1,5 @@
 angular.module("myApp")
-    .controller("storiesController", ["$scope", "$stateParams", function ($scope, $stateParams) {
+    .controller("fullStoriesController", ["$scope", "$stateParams", function ($scope, $stateParams) {
         var self = $stateParams;
         $scope.topStories = [
             {
@@ -21,8 +21,30 @@ angular.module("myApp")
                 imageUrl: "../app/images/story1.jpg"
             }
         ]
-    },
-    
 
-    ]);
+        $scope.currentStories = [];
 
+        function init() {
+            // $scope.topStories.forEach(function(items){
+            //     currentStories.push(item)
+            //     if (items.id == $stateParams.itemsId){
+            //         return true;
+            //     }
+            //     else {
+            //         return false;
+            //     }
+
+            // })
+            $scope.currentstories = $scope.topStories.filter(function (item) {
+                if (item.id == $stateParams.storiesId) {
+                    return true;
+                }
+                else {
+                    return false;
+                }
+            });
+
+
+        }
+        init();
+    }]);

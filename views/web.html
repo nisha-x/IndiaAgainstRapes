@@ -11,7 +11,54 @@
         </ul>
     </div>
 </nav> -->
+
 <nav class="nav-extended">
+    <div class="nav-wrapper">
+        <a href="#" class="brand-logo">IndiaAgainstRapes</a>
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger">
+            <i class="material-icons">menu</i>
+           
+        </a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li>
+                <a ui-sref="web.home">HOME</a>
+            </li>
+            <li>
+                <a ui-sref="web.stories">STORIES</a>
+            </li>
+            <li>
+                <a ui-sref="web.about">ABOUT</a>
+            </li>
+            <li>
+                <a ui-sref="web.contactus">CONTACT US</a>
+            </li>
+            <li>
+                <a ui-sref="web.cards">CARDS</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<ul class="sidenav" id="mobile-demo">
+    <li>
+        <a ui-sref="web.home">Home</a>
+    </li>
+    <li>
+        <a ui-sref="web.stories">Stories</a>
+    </li>
+    <li>
+        <a ui-sref="web.home">About</a>
+    </li>
+    <li>
+        <a ui-sref="web.contactus">Contact Us</a>
+    </li>
+    <li>
+        <a ui-sref="web.cards">Cards</a>
+    </li>
+</ul>
+<div ui-view=""></div>
+
+<!-- <nav class="nav-extended">
     <div class="nav-wrapper">
         <a href="#" class="brand-logo">IndiaAgainstRapes</a>
         <a href="#" data-target="mobile-demo" class="sidenav-trigger">
@@ -30,6 +77,9 @@
             <li>
                 <a ui-sref="web.contactus">CONTACT US</a>
             </li>
+            <li>
+                <a ui-sref="web.cards">CARDS</a>
+            </li>
         </ul>
     </div>
 </nav>
@@ -45,7 +95,10 @@
         <a ui-sref="web.home">About</a>
     </li>
     <li>
-        <a ui-sref="web.Contactus">Contact Us</a>
+        <a ui-sref="web.contactus">ContactUs</a>
+    </li>
+    <li>
+        <a ui-sref="web.cards">Cards</a>
     </li>
 </ul>
-<div ui-view=""></div>
+<div ui-view=""></div> -->
