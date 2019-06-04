@@ -7,24 +7,27 @@ angular.module("myApp")
                 getCard();
             };
 
+            function getCard(postData) {
 
-            function getCard() {
-
-                var postData = { cid:  ""};
+                var postData = { cid: "postData" };
 
                 $http({
-                    url: "https://stg.fyndster.com/wildcard/beta/boss.php?beta_cardstore_onCardStoreSync_MyOnCardStoreSync/fetchCompleteData/158/514258115/",
+                    url: "https://stg.fyndster.com/wildcard/beta/boss.php?beta_cardstore_onCardStoreSync_MyOnCardStoreSync/getCardByCid/",
                     method: "POST",
                     headers: {
-                        'Content-Type': undefined
+                        'Content-Type': "application/x-www-form-urlencoded"
                     },
                     data: $httpParamSerializer(postData)
                 }).then(function (resp) {
 
                 }, function (error) {
-                    var errroResp = error;
+                    var errorResp = error;
                 });
             };
+            $scope.getMeMyCards = function () {
+                getCards();
+            }
+    
 
             init();
         }]);

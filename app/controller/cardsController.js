@@ -23,7 +23,7 @@ angular.module("myApp")
             getCards();
         };
 
-
+        
         init();
 
     }]);

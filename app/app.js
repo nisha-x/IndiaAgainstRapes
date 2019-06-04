@@ -55,7 +55,7 @@ myApp.config(function ($stateProvider, $urlRouterProvider) {
             views: {
                 '@web': {
                     templateUrl: "../views/contactus.html",
-                    controller: "contactusController as ctrl"
+                    controller: "contactUsController as ctrl"
                 }
             }
         })
@@ -72,7 +72,7 @@ myApp.config(function ($stateProvider, $urlRouterProvider) {
             url: "/:cardsCid",
             views: {
                 '@web': {
-                    templateUrl: "../views/full-card.html",
+                    templateUrl: "../views/fullcard.html",
                     controller: "fullCardController as ctrl"
                 }
             }
